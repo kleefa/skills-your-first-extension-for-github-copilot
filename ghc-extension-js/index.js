@@ -54,7 +54,7 @@ app.post("/copilot", express.json(), async (req, res) => {
      content: schoolOverview,
    });
 
-  Add the staff descriptions to copilot's messages
+  //Add the staff descriptions to copilot's messages
    const staffDescriptions = await fs.readFile(
      path.join(__dirname, "agent-knowledge", "staff-roles.md"),
      "utf8"
